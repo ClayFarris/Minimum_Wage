@@ -15,17 +15,62 @@ Question:
 
 REQUIREMENTS
 
-The necessary packages to be installed are listed in the 'Requirements.txt' folder.
-This project was created working in Jupyter Notebook with Python 3 (ipykernel).
+The necessary libraries to be installed are listed in the 'Requirements.txt' folder.
+
+This project was created working in Jupyter Notebook with Python 3.9.13 (ipykernel).
+
 To run this project it is necessary to do the following:
 
-import matplotlib.pyplot as plt
-import pandas as pd
-import seaborn as sns
-import scipy.stats as stats
+Clone the repository to your local machine.
 
-The datasets analyzed in this project are included in the 'data' folder.
+Navigate to the cloned repo folder in the terminal and run:
 
+	pip install -r requirements
+
+In case there is a problem with this method I have included a list of the libraries below to be installed individually:
+
+	import ipykernel
+	import matplotlib.pyplot as plt
+	import pandas as pd
+	import seaborn as sns
+	import scipy.stats as stats
+
+The datasets analyzed in this project are included in the `data` folder:
+	
+	`MINIMUM_WAGES.csv`
+	`2015.csv`
+	`2016.csv`
+	`2017.csv`
+	`2018.csv`
+
+In order to make them run from the `data` folder in `Minimujm_Wage_Happiness.ipynb`, in the second code block you will need to change the names to:
+	
+	`data/MINIMUM_WAGES.csv`
+	`data/2015.csv`
+	`data/2016.csv`
+	`data/2017.csv`
+	`data/2018.csv`
+
+Otherwise you can download the .csv files from the links listed below and run them from your local machine.
+
+The main file in this project is called `Minimum_Wage_Happiness.ipynb` and contains the data analysis conducted in this project.
+
+
+HOW TO RUN THE PROGRAM IN JUPYTER NOTEBOOK
+
+	1. Clone the repository.
+	2. Save the Folder.
+	3. Open `Jupyter Notebook` from the command line or start menu.
+	4. Go to the saved location of the repo.
+	5. Open `Minimum_Wage_Happiness.ipynb`.
+	6. Open the `Cell` tab and click `Run All`.
+
+HOW TO RUN THE PROGRAM IN PYTHON
+
+	1. Clone the Repository.
+	2. Save the folder.
+	3. Open the saved repository in your terminal or IDE.
+	4. Run the `Minimum_Wage_Happiness.py` file.
 
 
 METHODOLOGY
@@ -40,13 +85,23 @@ The dataset provided by Firat Gonen gives the minimum wage of 31 countries. The 
 
 2. https://www.kaggle.com/datasets/unsdsn/world-happiness?select=2015.csv
 
-CSV name: 2015.csv, 2016.csv, 2017.csv, 2018.csv
+3. https://www.kaggle.com/datasets/unsdsn/world-happiness?select=2016.csv
+   
+4. https://www.kaggle.com/datasets/unsdsn/world-happiness?select=2017.csv
 
-The datasets provided by Sustainable Development Solutions Network gives the happiness score for 155-158 countries. The happiness scores and rankings use data from the Gallup World Poll. The scores are based on answers to the main life evaluation question asked in the poll. The dataset for the year 2019 was not included since the MINIMUM_WAGES dataset only goes up to the year 2018.
+5. https://www.kaggle.com/datasets/unsdsn/world-happiness?select=2018.csv
+
+
+CSV names: 2015.csv
+	   2016.csv
+           2017.csv
+           2018.csv
+
+The datasets provided by Sustainable Development Solutions Network gives the happiness score for 155-158 countries. The happiness scores and rankings use data from the Gallup World Poll. The scores are based on answers to the main life evaluation question asked in the poll. The dataset for 2019.csv was not included since the MINIMUM_WAGES dataset only goes up to the year 2018.
 
 
 
-FEATURES
+FEATURES UTILIZED
 
 1. Read data:
 I read in CSV data from the website Kaggle.com.
@@ -75,5 +130,20 @@ Although there is a significant correlation between minimum wage and happiness s
 The sample size is relatively small so the results may not be generalizable to countries not present in the data or other time periods.
 
 The presence of outliers as seen in both the bar chart and scatterplot suggests some variability in the relationship between minimum wage and happiness among different countries
+
+
+CITATIONS
+
+
+1. https://www.kaggle.com/datasets/frtgnn/minimum-wages-between-2001-2018
+
+2. https://www.kaggle.com/datasets/unsdsn/world-happiness?select=2015.csv
+
+3. https://www.kaggle.com/datasets/unsdsn/world-happiness?select=2016.csv
+   
+4. https://www.kaggle.com/datasets/unsdsn/world-happiness?select=2017.csv
+
+5. https://www.kaggle.com/datasets/unsdsn/world-happiness?select=2018.csv
+
 
 
